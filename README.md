@@ -6,3 +6,5 @@ A small collection of things I learn every day in the variety of languages and t
 
 ---
 ## TOC
+### PL/SQL
+[PL/SQL uses short circuit evaluation](./plsql/plsql-uses-short-circuit-evaluation.md)
