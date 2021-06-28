@@ -37,7 +37,7 @@ Better error handling is not the only benefit.
 It can also potentially improve the performance of our code. But how?
 As mentioned above PL/SQL will stop evaluating the expression if e.g. the first value of an `OR` expression is `true`. Because the whole expression is true. 
 
-So if we imagine that we have a slow executing function that returns a Boolean value, we can write our logical expression in the "normal" way, which means we let the `slow_function` evaluate first and then the Boolean value, or in the "short-circuit" way, which means we evaluate the Boolean value first and then the function. Spoiler alert, the expressions in the "short-circuit" way, will always stopping evaluation and costs zero time.
+So if we imagine that we have a slow executing function that returns a Boolean value, we can write our logical expression in the "normal" way, which means we let the `slow_function` evaluate first and then the Boolean value, or in the "short-circuit" way, which means we evaluate the Boolean value first and then the function. Spoiler alert, the expressions in the type of "short circuit", end the evaluation prematurely and cost zero time.
  
 ```plsql
 set serverout on
